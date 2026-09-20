@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        button{
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        button:focus{
+            background-color: blue;
+            color: white;
+        }
+        button:active{
+            background-color: grey;
+            color: white;
+        }
+        input[type="checkbox"]{
+            width: 50px;
+            height: 40px;
+        }
+        input[type="checkbox"]:checked{
+            box-shadow: 3px 3px 5px black;
+            accent-color: red;
+        }
+        input[type="checkbox"]:focus{
+            box-shadow: 3px 3px 5px blue;
+        }
+        input[type="checkbox"]:hover{
+            box-shadow: 3px 3px 5px grey;
+        }
+        a{
+            font-size: 20px;
+        }
+        a:link{
+            color:black;
+            text-decoration: none;
+        }
+        a:visited{
+            color:red;
+        }
+            */
+        /*
+        form input pseudo classes 
+        
+        checked
+        disabled
+        enabled
+        required
+        optional
+        valid
+        invalid
+        read-only
+        read-write
+        placeholder-shown
+        in-range
+        out-of-range
+
+        has
+        is
+        not
+        where
+        
+        */
+        /*
+        input:required{
+            border-color: red;
+            font-size: 20px;
+        }
+        input:enabled{
+            border-width:0px 0px 1px 0px;;
+            border-color: green;
+            font-size: 20px;
+        }
+        input:read-write{
+            background-color: transparent;
+        }
+        input:read-only{
+            background-color: lightgrey;
+        }
+        input:disabled{
+            color:grey;
+            border-width:0px;
+            background-color: white;
+        }
+        input:invalid{
+            border:2px solid red;
+        }
+        input[type="checkbox"]:not(:checked){
+            box-shadow: 3px 3px 5px red;
+        }
+        input:in-range{
+            color:green;
+        }
+        input:out-of-range{
+            color:red;
+        }*/
+        div:has(h1){
+            background-color: black;
+            color: white;
+        }
+        div:not(:has(h1)){
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <button>Click me</button></br>
+    <a href="#6" >Visit Link</a></br>
+    <a href="#61" >Visit Link</a></br>
+    <a href="#63" >Visit Link</a></br>
+    <input type="checkbox">
+    <form>
+        <input type="text" value="Mr." readonly>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Middle Name" optional>
+        <input type="text" placeholder="Last Name Name" required></br>
+        <input type="text" placeholder="Enter your Email" required></br>
+        <input type="number" value="20" disabled></br>
+        <input type="number" value="20" min="10" max="30" placeholder="number"></br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>
+        <h1>Heading 1</h1>
+    </div>
+    <div>
+        <h2>Heading 2</h2>
+    </div>
+</body>
+</html>

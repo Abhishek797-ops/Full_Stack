@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+
+.sidebar{
+    display:flex;
+    flex-direction:column;
+    width:220px;
+    background:#222;
+    color:white;
+    padding:20px;
+}
+
+.sidebar h2{
+    margin-bottom:25px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:12px 0;
+    cursor:pointer;
+}
+
+
+.main{
+    padding:20px;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.header-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#ffffff;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-row h1{
+    font-size:24px;
+    color:#333;
+}
+
+.profile-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:#555;
+}
+
+.profile-actions span{
+    font-weight:600;
+}
+
+.profile-actions button{
+    border:none;
+    background:#222;
+    color:#fff;
+    padding:10px 16px;
+    border-radius:999px;
+    cursor:pointer;
+}
+
+/* Dashboard Overview */
+
+
+.overview{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.overview .card{
+    flex:0 0 calc(50% - 10px);
+}
+
+.card{
+    background:white;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* Recent Orders */
+
+.orders{
+    background:white;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.orders h2{
+    margin-bottom:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    text-align:left;
+    border-bottom:1px solid #ddd;
+}
+
+th{
+    background:#f0f0f0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>Dashboard</h2>
+
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Orders</li>
+            <li>Customers</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+    <main class="main">
+
+        <section class="header-row">
+            <h1>Dashboard Overview</h1>
+            <div class="profile-actions">
+                <span>User</span>
+                <button>Profile</button>
+            </div>
+        </section>
+
+        <section class="overview">
+            <div class="card">
+                <h3>Sales</h3>
+                <p>245000</p>
+            </div>
+
+            <div class="card">
+                <h3>Orders</h3>
+                <p>320</p>
+            </div>
+
+            <div class="card">
+                <h3>Customers</h3>
+                <p>145</p>
+            </div>
+
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>190000</p>
+            </div>
+        </section>
+
+        <section class="orders">
+            <h2>Recent Orders</h2>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Customer</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>#1001</td>
+                    <td>John</td>
+                    <td>$120</td>
+                    <td>Delivered</td>
+                </tr>
+
+                <tr>
+                    <td>#1002</td>
+                    <td>Emma</td>
+                    <td>$85</td>
+                    <td>Pending</td>
+                </tr>
+
+                <tr>
+                    <td>#1003</td>
+                    <td>David</td>
+                    <td>$240</td>
+                    <td>Shipped</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
