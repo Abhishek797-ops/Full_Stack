@@ -67,7 +67,32 @@ console.log(nArr);
 */
 //wap to convert a user entered number into binary and hexadecimal value.
 
-let num=parseInt(prompt("Enter a number:"));
+/*let num=parseInt(prompt("Enter a number:"));
 console.log("Binary: " + num.toString(2));
 console.log("Hexadecimal: " + num.toString(16));
+*/
 
+let arr=[1,2,3,4,5];
+console.log(arr);    // Output: [1, 2, 3, 4, 5]
+
+arr.push(6);
+console.log(arr);    // Output: [1, 2, 3, 4, 5, 6]
+ 
+arr.unshift(0);
+console.log(arr);    // Output: [0, 1, 2, 3, 4, 5, 6]
+
+arr.pop();
+console.log(arr);    // Output: [0, 1, 2, 3, 4, 5]
+
+arr.shift();
+console.log(arr);    // Output: [1, 2, 3, 4, 5]
+
+console.log(arr.join(":"));    // Output: 1:2:3:4:5
+
+arr.foo = "hello";
+console.log(arr);    // Output: [1, 2, 3, 4, 5, foo: "hello"]
+
+console.log(arr.indexOf(undefined));    // Output: -1
+
+arr=[1, 2, 3, 4, 5, null];
+console.log(arr.indexOf(null));    // Output: 5
