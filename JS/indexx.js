@@ -71,7 +71,7 @@ console.log(nArr);
 console.log("Binary: " + num.toString(2));
 console.log("Hexadecimal: " + num.toString(16));
 */
-
+/*
 let arr=[1,2,3,4,5];
 console.log(arr);    // Output: [1, 2, 3, 4, 5]
 
@@ -96,3 +96,31 @@ console.log(arr.indexOf(undefined));    // Output: -1
 
 arr=[1, 2, 3, 4, 5, null];
 console.log(arr.indexOf(null));    // Output: 5
+*/
+/* Nullish coalescing 
+
+let price =100,quantity;
+let total=price*Number.parseInt(quantity??1);
+console.log(total);    // Output: 100
+
+let obj={
+    name:"Abhay",
+    location:{
+        city:"Mathura"
+    }
+};
+console.log(obj?.age);  // Optional chaining 
+console.log(obj.location.state??="UP");
+console.log(obj);
+*/
+
+console.log("innerText: " , document.getElementById("p").innerText);
+console.log("textContent: " , document.getElementById("p").textContent);
+
+let btn=document.getElementById("btn");
+let p=document.getElementById("p");
+btn.addEventListener("click",()=>{
+    p.classList.toggle('hide');
+});
+
+
